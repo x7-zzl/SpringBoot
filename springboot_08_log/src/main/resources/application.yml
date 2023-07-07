@@ -1,0 +1,35 @@
+
+#开启debug模式,输出调试信息,常用于检查系统运行情况
+#debug: true
+
+#设置日志基本级别,root表示节点,即整体应用日志级别
+logging:
+
+  #设置日志输出格式
+  #%d:日期  %m:消息  %n:换行   %p:日志级别   %clr；颜色  %t:thread  %c:class
+  pattern:
+#    console: "%d - %m%n"
+    console: "%d - %clr(%5p) --- [%t]: %40.40c: %clr(%m){cyan} %n"
+
+  group:
+#    自定义组名,设置当前组中的包
+    ebank: com.zzl.controller
+
+  level:
+#    设置全局日志级别
+    root: info
+#    为对应组设置日志级别
+    enbank: debug
+    #    com.zzl.controller: debug
+
+#设置日志保存到本地文件中
+  file:
+    name: server.log
+
+  logback:
+    rollingpolicy:
+#      文件最大值
+      max-file-size: 5KB
+#      文件名称（server_log.2023.04.08.0.log）
+      file-name-pattern: zzl_server_log.%d.%i.log
+

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AnalysisProjectProfileManager">
+    <option name="PROJECT_PROFILE" />
+    <option name="USE_PROJECT_LEVEL_SETTINGS" value="false" />
+    <list size="0" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/../springboot_01_01_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_01_02_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_02_base_configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_03_yaml/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_04_junit/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring-boot-mybatis-plus-quick-start/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_05_mybatis_plus/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_05_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/../sringboot_05_mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_05_mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_06_ssmp/pom.xml" />
+        <option value="$PROJECT_DIR$/../../桌面/Note/SpringBoot/SpringBoot—资料/源代码/springboot/springboot_07_config/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_08_log/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_09_hot-deploy/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_07_config-profile/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_10_configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_11_test/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_12_sql/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_13_redis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_14_mongodb/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_15_cache/pom.xml" />
+        <option value="$PROJECT_DIR$/../springboot_16_jetcache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_05_mybatisplus/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_01_01_quickstart/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_06_ssmp/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_16_jetcache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_05_01_mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_17_mail/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_01_01_helloworld/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_18_springcache/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot_19_rwJDBC/pom.xml" />
+        <option value="$PROJECT_DIR$/../demo1/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="SuppressionsComponent">
+    <option name="suppComments" value="[]" />
+  </component>
+</project>

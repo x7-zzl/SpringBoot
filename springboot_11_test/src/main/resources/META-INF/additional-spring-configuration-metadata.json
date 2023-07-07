@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "testcase.book.id",
+      "type": "java.lang.String",
+      "description": "Description for testcase.book.id."
+  }
+] }

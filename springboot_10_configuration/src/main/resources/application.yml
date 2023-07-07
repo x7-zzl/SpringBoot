@@ -1,0 +1,13 @@
+servers1:
+  ipAddress:  168.23.2.1
+#  -i-p-Ad_DRESs:  168.23.2.1
+  port: 8087
+#  timeout: 240
+  serverTime: 3
+  dataSize: 10MB
+
+#注意进制问题，会自动把符合二进制、八进制、十六进制的字符串转换
+#解决方法:加上""
+datasource:
+  driverClassName: "com.mysql.cj.123"
+  password: "yswysyydxj"

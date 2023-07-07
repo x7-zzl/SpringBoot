@@ -1,0 +1,28 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webframe?serverTimezone=UTC
+    username: root
+    password: yswysyydxj
+#  是否参与热部署
+  devtools:
+    restart:
+      exclude: static/**, public/**, /resources/pages/books.html
+#      设置热部署开关false关闭,true打开
+#      enabled: false
+
+#mp设置id自增
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+#      table-prefix: tbl_
+
+  #配置日志控制台输出
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+
+server:
+  port: 8088

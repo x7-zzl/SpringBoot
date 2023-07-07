@@ -1,0 +1,82 @@
+country: China
+provunce: zhenzhou
+city: gushi
+
+port: 7771
+
+#构造对象
+user1:
+  name: zzl
+  age: 21
+
+user2:
+  name: zzl
+  age: 20
+
+#多层级
+a:
+  b:
+    c:
+      d:
+        e: 123
+
+#多个数据
+likes:
+  - game
+  - music
+  - sleep
+  - learning
+
+#缩略版
+likes2: [ayaya,najisa,kotomi,tamako]
+
+
+users1:
+  -
+    name: zzl
+    age: 21
+  -
+    name: yuhan
+    age: 66
+
+users2:
+  - name: ayaya
+    age: 666
+  - name: najisa
+    age: 18
+
+users3: [{name: tamako,age: 18},{name: kotomi,age: 16}]
+
+server:
+  port: 7777
+#  servlet:
+#    context-path: \testzzl666
+
+
+baseDir: c:\windows
+
+#加双引号里面的转义字符可以生效
+tempDir1: c:\windows\user
+tempDir2: "${baseDir} j\temp \t1 \t2 \t3"
+
+
+lesson: SpringBoot
+
+enterprise:
+  name: zzl
+  age: 21
+  telphone: 17596537888
+  address: 郑州轻工业大学
+  subject:
+    - java
+    - vue
+    - database
+
+
+
+#创建一个类，封装下面的对象
+jdbc:
+  driver: com.mysql.cj.jdbc.Driver
+  url: jdbc:mysql://localhost:3306/webframe?useSSL=false
+  username: root
+  password: yswysyydxj

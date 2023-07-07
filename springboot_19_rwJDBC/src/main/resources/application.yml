@@ -1,0 +1,44 @@
+
+server:
+  port: 8080
+mybatis-plus:
+  configuration:
+    #\u5728\u6620\u5C04\u5B9E\u4F53\u6216\u8005\u5C5E\u6027\u65F6\uFF0C\u5C06\u6570\u636E\u5E93\u4E2D\u8868\u540D\u548C\u5B57\u6BB5\u540D\u4E2D\u7684\u4E0B\u5212\u7EBF\u53BB\u6389\uFF0C\u6309\u7167\u9A7C\u5CF0\u547D\u540D\u6CD5\u6620\u5C04
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+spring:
+  shardingsphere:
+    datasource:
+      names:
+        master,slave
+      # \u4E3B\u6570\u636E\u6E90
+      master:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://192.168.138.100:3306/rw?characterEncoding=utf-8
+        username: root
+        password: root
+      # \u4ECE\u6570\u636E\u6E90
+      slave:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driver-class-name: com.mysql.cj.jdbc.Driver
+        url: jdbc:mysql://192.168.138.101:3306/rw?characterEncoding=utf-8
+        username: root
+        password: root
+    masterslave:
+      # \u8BFB\u5199\u5206\u79BB\u914D\u7F6E
+      load-balance-algorithm-type: round_robin #\u8F6E\u8BE2
+      # \u6700\u7EC8\u7684\u6570\u636E\u6E90\u540D\u79F0
+      name: dataSource
+      # \u4E3B\u5E93\u6570\u636E\u6E90\u540D\u79F0
+      master-data-source-name: master
+      # \u4ECE\u5E93\u6570\u636E\u6E90\u540D\u79F0\u5217\u8868\uFF0C\u591A\u4E2A\u9017\u53F7\u5206\u9694
+      slave-data-source-names: slave
+    props:
+      sql:
+        show: true #\u5F00\u542FSQL\u663E\u793A\uFF0C\u9ED8\u8BA4false
+  main:  #\u5141\u8BB8bean\u8986\u76D6\uFF0C\u8986\u76D6\u6E90\u7801\u7C7B\u4E2D\u5DF2\u7ECF\u64CD\u4F5C\u7684bean
+    allow-bean-definition-overriding: true

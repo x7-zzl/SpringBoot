@@ -1,0 +1,22 @@
+#配置数据库信息
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webframe?serverTimezone=UTC
+    username: root
+    password: yswysyydxj
+
+#两种配置druid数据库连接池的方式
+
+#spring:
+#  datasource:
+#    druid:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/webframe?serverTimezone=UTC
+#      username: root
+#      password: yswysyydxj
+#      type: com.alibaba.druid.pool.DruidDataSource
+
+
+

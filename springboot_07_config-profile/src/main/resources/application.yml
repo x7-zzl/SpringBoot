@@ -1,0 +1,8 @@
+#按组分配
+spring:
+  profiles:
+    active: @profile.active@
+    group:
+      "dev": devDB,testRedis,devMVC
+      "pro" : proDB,testRedis,proMVC
+      "test": testDB,testRedis,testMVC

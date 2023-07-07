@@ -1,0 +1,40 @@
+#默认使用的是hikariCP，速度最快
+#或者tomcat内置的
+spring:
+  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/webframe?serverTimezone=UTC
+    username: root
+    password: yswysyydxj
+  cache:
+    type: redis
+    redis:
+#      是否使用前缀
+      use-key-prefix: true
+#      生命周期
+      time-to-live: 10s
+#      指定key的前缀
+      key-prefix: zzl
+#      是否缓存空值
+      cache-null-values: true
+  redis:
+    host: localhost
+    port: 6379
+
+
+#mp设置id自增
+mybatis-plus:
+  global-config:
+    db-config:
+      id-type: auto
+#      table-prefix: tbl_
+
+#配置日志控制台输出
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#server:
+#  port: 8081
+
+
